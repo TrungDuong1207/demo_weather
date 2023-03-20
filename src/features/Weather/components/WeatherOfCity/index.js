@@ -11,11 +11,13 @@ const WeatherOfCity = (props) => {
             </div>
             <div className="weather-app-temperature">
                 <div style={{ fontSize: "80px" }}>{Math.round(weatherData.main.temp)}&#8451;</div>
-                <img src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="weather icon" />
             </div>
             <div className="weather-app-description">{weatherData.weather[0].description}</div>
-            <div >H: {Math.round(weatherData.main.temp_max)}&#8451;</div>
-            <div>L: {Math.round(weatherData.main.temp_min)}&#8451;</div>
+            <div className = "weather-max-min">
+                <div className = "weather-max-min-item">H: {Math.round(weatherData.main.temp_max)}&#8451;</div>
+                <div className = "weather-max-min-item">L: {Math.round(weatherData.main.temp_min)}&#8451;</div>
+            </div>
+
         </div>
     );
 };

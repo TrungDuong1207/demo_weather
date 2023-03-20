@@ -1,10 +1,13 @@
 .weather-forecast {
     display: flex;
+    justify-content: center;
     gap: 5px;
+    margin: 20px;
 }
 
 .weather-forecast-item{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
